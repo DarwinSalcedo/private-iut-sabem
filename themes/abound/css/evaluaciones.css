@@ -1,0 +1,101 @@
+/*!
+*darwin salcedo
+*/
+input[type=radio] {
+              /*position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;*/
+              background-color: black;
+
+            }
+
+            input[type=radio] + span  {
+              padding-left:15px;
+              height:30px; 
+              display:inline-block;
+              line-height:30px;
+              background-repeat:no-repeat;
+              background-position: 0 0;
+              font-size:30px;
+              vertical-align:middle;
+              cursor:pointer;
+              padding-right:2px;
+
+            }
+
+            input[type=radio]:checked + span {              
+              background-color: rgba(40, 56, 129, 1);
+              border-radius: 1em;
+              border-width: 1em;
+              color: white;
+            }
+            span {        
+        
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      #ave{
+        margin: 4px;
+        padding: 10px;
+        color: #fff;
+        font-size:20px;
+        float: none;
+        background-color: rgba(40, 56, 129, 1);
+        max-width: 300px;
+        }  
+          #aved{
+        margin: 4px;
+        padding: 10px;
+        color: #fff;
+        font-size:20px;
+        float: none;
+        background-color: rgba(40, 56, 129, 1);
+        max-width: 300px;
+        } 
+
+        #aveeb{
+        margin: 4px;
+        padding: 10px;
+        color: #fff;
+        font-size:20px;
+        float: none;
+        background-color: rgba(40, 56, 129, 1);
+        max-width: 300px;
+        }  
+          #aveaa{
+        margin: 4px;
+        padding: 10px;
+        color: #fff;
+        font-size:20px;
+        float: none;
+        background-color: rgba(40, 56, 129, 1);
+        max-width: 300px;
+        }  
+
+         #avec{
+        margin: 4px;
+        padding: 10px;
+        color: #fff;
+        font-size:20px;
+        float: none;
+        background-color: rgba(40, 56, 129, 1);
+        max-width: 300px;
+        }   #aveaa{
+        margin: 4px;
+        padding: 10px;
+        color: #fff;
+        font-size:20px;
+        float: none;
+        background-color: rgba(40, 56, 129, 1);
+        max-width: 300px;
+        }  #aveh{
+        margin: 4px;
+        padding: 10px;
+        color: #fff;
+        font-size:20px;
+        float: none;
+        background-color: rgba(40, 56, 129, 1);
+        max-width: 300px;
+        }
