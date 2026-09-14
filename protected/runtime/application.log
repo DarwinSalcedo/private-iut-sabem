@@ -1,0 +1,1972 @@
+2016/03/03 04:21:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Acc�s refus� pour l'utilisateur: 'root'@'@localhost' (mot de passe: OUI)' in C:\wamp\www\sabem\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\wamp\www\sabem\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\wamp\www\sabem\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\wamp\www\sabem\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\wamp\www\sabem\framework\web\auth\CDbAuthManager.php(589): CModule->getComponent('db')
+#4 C:\wamp\www\sabem\framework\web\auth\CDbAuthManager.php(59): CDbAuthManager->getDbConnection()
+#5 C:\wamp\www\sabem\framework\base\CModule.php(387): CDbAuthManager->init()
+#6 C:\wamp\www\sabem\framework\web\CWebApplication.php(185): CModule->getComponent('authManager')
+#7 C:\wamp\www\sabem\framework\web\auth\CWebUser.php(815): CWebApplication->getAuthManager()
+#8 C:\wamp\www\sabem\themes\abound\views\layouts\tpl_navigation.php(27): CWebUser->checkAccess('admin')
+#9 C:\wamp\www\sabem\themes\abound\views\layouts\main.php(52): require_once('C:\\wamp\\www\\sab...')
+#10 C:\wamp\www\sabem\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\sab...')
+#11 C:\wamp\www\sabem\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\sab...', Array, true)
+#12 C:\wamp\www\sabem\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\wamp\\www\\sab...', Array, true)
+#13 C:\wamp\www\sabem\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#14 C:\wamp\www\sabem\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#15 C:\wamp\www\sabem\framework\web\CBaseController.php(206): COutputProcessor->run()
+#16 C:\wamp\www\sabem\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#17 C:\wamp\www\sabem\themes\abound\views\layouts\column1.php(7): CBaseController->endContent()
+#18 C:\wamp\www\sabem\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\sab...')
+#19 C:\wamp\www\sabem\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\sab...', Array, true)
+#20 C:\wamp\www\sabem\framework\web\CController.php(784): CBaseController->renderFile('C:\\wamp\\www\\sab...', Array, true)
+#21 C:\wamp\www\sabem\protected\controllers\SiteController.php(118): CController->render('login', Array)
+#22 C:\wamp\www\sabem\protected\controllers\SiteController.php(36): SiteController->actionLogin()
+#23 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#24 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#25 C:\wamp\www\sabem\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#26 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('')
+#28 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#29 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#30 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/sabem/
+---
+2016/03/05 04:11:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Base 'bomgesh_test' inconnue' in C:\wamp\www\sabem\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\wamp\www\sabem\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\wamp\www\sabem\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\wamp\www\sabem\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\wamp\www\sabem\framework\web\auth\CDbAuthManager.php(589): CModule->getComponent('db')
+#4 C:\wamp\www\sabem\framework\web\auth\CDbAuthManager.php(59): CDbAuthManager->getDbConnection()
+#5 C:\wamp\www\sabem\framework\base\CModule.php(387): CDbAuthManager->init()
+#6 C:\wamp\www\sabem\framework\web\CWebApplication.php(185): CModule->getComponent('authManager')
+#7 C:\wamp\www\sabem\framework\web\auth\CWebUser.php(815): CWebApplication->getAuthManager()
+#8 C:\wamp\www\sabem\themes\abound\views\layouts\tpl_navigation.php(27): CWebUser->checkAccess('admin')
+#9 C:\wamp\www\sabem\themes\abound\views\layouts\main.php(52): require_once('C:\\wamp\\www\\sab...')
+#10 C:\wamp\www\sabem\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\sab...')
+#11 C:\wamp\www\sabem\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\sab...', Array, true)
+#12 C:\wamp\www\sabem\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\wamp\\www\\sab...', Array, true)
+#13 C:\wamp\www\sabem\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#14 C:\wamp\www\sabem\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#15 C:\wamp\www\sabem\framework\web\CBaseController.php(206): COutputProcessor->run()
+#16 C:\wamp\www\sabem\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#17 C:\wamp\www\sabem\themes\abound\views\layouts\column1.php(7): CBaseController->endContent()
+#18 C:\wamp\www\sabem\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\sab...')
+#19 C:\wamp\www\sabem\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\sab...', Array, true)
+#20 C:\wamp\www\sabem\framework\web\CController.php(784): CBaseController->renderFile('C:\\wamp\\www\\sab...', Array, true)
+#21 C:\wamp\www\sabem\protected\controllers\SiteController.php(121): CController->render('login', Array)
+#22 C:\wamp\www\sabem\protected\controllers\SiteController.php(36): SiteController->actionLogin()
+#23 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#24 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#25 C:\wamp\www\sabem\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#26 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('')
+#28 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#29 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#30 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/sabem/
+HTTP_REFERER=http://localhost/sabem/ascenso/view.jsp
+---
+2016/03/05 04:11:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Base 'bomgesh_test' inconnue' in C:\wamp\www\sabem\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\wamp\www\sabem\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\wamp\www\sabem\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\wamp\www\sabem\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\wamp\www\sabem\framework\web\auth\CDbAuthManager.php(589): CModule->getComponent('db')
+#4 C:\wamp\www\sabem\framework\web\auth\CDbAuthManager.php(59): CDbAuthManager->getDbConnection()
+#5 C:\wamp\www\sabem\framework\base\CModule.php(387): CDbAuthManager->init()
+#6 C:\wamp\www\sabem\framework\web\CWebApplication.php(185): CModule->getComponent('authManager')
+#7 C:\wamp\www\sabem\framework\web\auth\CWebUser.php(815): CWebApplication->getAuthManager()
+#8 C:\wamp\www\sabem\themes\abound\views\layouts\tpl_navigation.php(27): CWebUser->checkAccess('admin')
+#9 C:\wamp\www\sabem\themes\abound\views\layouts\main.php(52): require_once('C:\\wamp\\www\\sab...')
+#10 C:\wamp\www\sabem\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\sab...')
+#11 C:\wamp\www\sabem\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\sab...', Array, true)
+#12 C:\wamp\www\sabem\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\wamp\\www\\sab...', Array, true)
+#13 C:\wamp\www\sabem\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#14 C:\wamp\www\sabem\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#15 C:\wamp\www\sabem\framework\web\CBaseController.php(206): COutputProcessor->run()
+#16 C:\wamp\www\sabem\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#17 C:\wamp\www\sabem\themes\abound\views\layouts\column1.php(7): CBaseController->endContent()
+#18 C:\wamp\www\sabem\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\sab...')
+#19 C:\wamp\www\sabem\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\sab...', Array, true)
+#20 C:\wamp\www\sabem\framework\web\CController.php(784): CBaseController->renderFile('C:\\wamp\\www\\sab...', Array, true)
+#21 C:\wamp\www\sabem\protected\controllers\SiteController.php(121): CController->render('login', Array)
+#22 C:\wamp\www\sabem\protected\controllers\SiteController.php(36): SiteController->actionLogin()
+#23 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#24 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#25 C:\wamp\www\sabem\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#26 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('')
+#28 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#29 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#30 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/sabem/
+---
+2016/03/05 04:17:28 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`bombesh_test`.`authassignment`, CONSTRAINT `authassignment_ibfk_1` FOREIGN KEY (`itemname`) REFERENCES `authitem` (`name`) ON DELETE CASCADE ON UPDATE CASCADE). La sentencia SQL ejecutada fue: INSERT INTO `AuthAssignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data).
+in C:\wamp\www\sabem\protected\models\Usuario.php (161)
+in C:\wamp\www\sabem\protected\models\Usuario.php (155)
+in C:\wamp\www\sabem\protected\controllers\SiteController.php (154)
+2016/03/05 04:17:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`bombesh_test`.`authassignment`, CONSTRAINT `authassignment_ibfk_1` FOREIGN KEY (`itemname`) REFERENCES `authitem` (`name`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `AuthAssignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data)' in C:\wamp\www\sabem\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\sabem\framework\db\CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 C:\wamp\www\sabem\framework\web\auth\CDbAuthManager.php(263): CDbCommand->insert('AuthAssignment', Array)
+#2 C:\wamp\www\sabem\protected\models\Usuario.php(161): CDbAuthManager->assign('demo', 1)
+#3 C:\wamp\www\sabem\protected\models\Usuario.php(155): Usuario->asignarRoleDefault(1)
+#4 C:\wamp\www\sabem\protected\controllers\SiteController.php(154): Usuario->guardarUsuario('Juan', 'Clave.12345', '23618050', 'davidks18@gmail...')
+#5 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistrar()
+#6 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\sabem\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('registrar')
+#10 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registrar')
+#11 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/sabem/site/registrar.jsp
+HTTP_REFERER=http://localhost/sabem/site/registrar.jsp
+---
+2016/03/05 04:18:57 [error] [php] Trying to get property of non-object (C:\wamp\www\sabem\protected\components\UserIdentity.php:33)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute()
+#1 C:\wamp\www\sabem\framework\base\CModel.php(159): CInlineValidator->validate()
+#2 C:\wamp\www\sabem\protected\controllers\SiteController.php(106): LoginForm->validate()
+#3 C:\wamp\www\sabem\protected\controllers\SiteController.php(36): SiteController->actionLogin()
+#4 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\www\sabem\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\www\sabem\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/
+in C:\wamp\www\sabem\protected\components\UserIdentity.php (33)
+in C:\wamp\www\sabem\protected\models\LoginForm.php (54)
+in C:\wamp\www\sabem\protected\controllers\SiteController.php (106)
+2016/03/05 04:32:39 [error] [php] Trying to get property of non-object (C:\wamp\www\sabem\protected\views\funcionarios\saludo.php:6)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CController.php(869): FuncionariosController->renderFile()
+#1 C:\wamp\www\sabem\framework\web\CController.php(782): FuncionariosController->renderPartial()
+#2 C:\wamp\www\sabem\protected\controllers\FuncionariosController.php(313): FuncionariosController->render()
+#3 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): FuncionariosController->actionSaludo()
+#4 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): FuncionariosController->runAction()
+#6 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): FuncionariosController->filterAccessControl()
+#9 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\www\sabem\framework\web\CController.php(265): FuncionariosController->runActionWithFilters()
+#12 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): FuncionariosController->run()
+#13 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/Funcionarios/saludo
+in C:\wamp\www\sabem\protected\views\funcionarios\saludo.php (6)
+in C:\wamp\www\sabem\protected\controllers\FuncionariosController.php (313)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/04 23:08:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message ' not exist.' in C:\wamp\www\sabem\protected\models\Funcionarios.php:190
+Stack trace:
+#0 C:\wamp\www\sabem\protected\controllers\FuncionariosController.php(313): Funcionarios->cargarCedula('23618050')
+#1 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): FuncionariosController->actionSaludo()
+#2 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('saludo')
+#11 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('Funcionarios/sa...')
+#12 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sabem/Funcionarios/saludo
+HTTP_REFERER=http://localhost/sabem/
+---
+2016/03/05 05:01:12 [error] [php] Trying to get property of non-object (C:\wamp\www\sabem\protected\views\funcionarios\saludo.php:6)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CController.php(869): FuncionariosController->renderFile()
+#1 C:\wamp\www\sabem\framework\web\CController.php(782): FuncionariosController->renderPartial()
+#2 C:\wamp\www\sabem\protected\controllers\FuncionariosController.php(313): FuncionariosController->render()
+#3 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): FuncionariosController->actionSaludo()
+#4 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): FuncionariosController->runAction()
+#6 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): FuncionariosController->filterAccessControl()
+#9 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\www\sabem\framework\web\CController.php(265): FuncionariosController->runActionWithFilters()
+#12 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): FuncionariosController->run()
+#13 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/Funcionarios/saludo
+in C:\wamp\www\sabem\protected\views\funcionarios\saludo.php (6)
+in C:\wamp\www\sabem\protected\controllers\FuncionariosController.php (313)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/06 21:42:30 [error] [php] Trying to get property of non-object (C:\wamp\www\sabem\protected\views\funcionarios\_view.php:30)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\zii\widgets\CListView.php(291): FuncionariosController->renderFile()
+#1 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 C:\wamp\www\sabem\framework\web\CBaseController.php(173): CListView->run()
+#6 C:\wamp\www\sabem\protected\views\funcionarios\index.php(21): FuncionariosController->widget()
+#7 C:\wamp\www\sabem\framework\web\CBaseController.php(126): require()
+#8 C:\wamp\www\sabem\framework\web\CBaseController.php(95): FuncionariosController->renderInternal()
+#9 C:\wamp\www\sabem\framework\web\CController.php(869): FuncionariosController->renderFile()
+#10 C:\wamp\www\sabem\framework\web\CController.php(782): FuncionariosController->renderPartial()
+#11 C:\wamp\www\sabem\protected\controllers\FuncionariosController.php(206): FuncionariosController->render()
+#12 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): FuncionariosController->actionIndex()
+#13 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): FuncionariosController->runAction()
+#15 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): FuncionariosController->filterAccessControl()
+#18 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\wamp\www\sabem\framework\web\CController.php(265): FuncionariosController->runActionWithFilters()
+#21 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): FuncionariosController->run()
+#22 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/funcionarios/index.jsp
+in C:\wamp\www\sabem\protected\views\funcionarios\_view.php (30)
+in C:\wamp\www\sabem\protected\views\funcionarios\index.php (21)
+in C:\wamp\www\sabem\protected\controllers\FuncionariosController.php (206)
+2016/03/06 21:58:20 [error] [php] Trying to get property of non-object (C:\wamp\www\sabem\protected\views\funcionarios\saludo.php:6)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CController.php(869): FuncionariosController->renderFile()
+#1 C:\wamp\www\sabem\framework\web\CController.php(782): FuncionariosController->renderPartial()
+#2 C:\wamp\www\sabem\protected\controllers\FuncionariosController.php(313): FuncionariosController->render()
+#3 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): FuncionariosController->actionSaludo()
+#4 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): FuncionariosController->runAction()
+#6 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): FuncionariosController->filterAccessControl()
+#9 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\www\sabem\framework\web\CController.php(265): FuncionariosController->runActionWithFilters()
+#12 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): FuncionariosController->run()
+#13 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/Funcionarios/saludo
+in C:\wamp\www\sabem\protected\views\funcionarios\saludo.php (6)
+in C:\wamp\www\sabem\protected\controllers\FuncionariosController.php (313)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/06 21:59:28 [error] [php] Trying to get property of non-object (C:\wamp\www\sabem\protected\views\funcionarios\_view.php:30)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\zii\widgets\CListView.php(291): FuncionariosController->renderFile()
+#1 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 C:\wamp\www\sabem\framework\web\CBaseController.php(173): CListView->run()
+#6 C:\wamp\www\sabem\protected\views\funcionarios\index.php(21): FuncionariosController->widget()
+#7 C:\wamp\www\sabem\framework\web\CBaseController.php(126): require()
+#8 C:\wamp\www\sabem\framework\web\CBaseController.php(95): FuncionariosController->renderInternal()
+#9 C:\wamp\www\sabem\framework\web\CController.php(869): FuncionariosController->renderFile()
+#10 C:\wamp\www\sabem\framework\web\CController.php(782): FuncionariosController->renderPartial()
+#11 C:\wamp\www\sabem\protected\controllers\FuncionariosController.php(206): FuncionariosController->render()
+#12 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): FuncionariosController->actionIndex()
+#13 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): FuncionariosController->runAction()
+#15 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): FuncionariosController->filterAccessControl()
+#18 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\wamp\www\sabem\framework\web\CController.php(265): FuncionariosController->runActionWithFilters()
+#21 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): FuncionariosController->run()
+#22 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/funcionarios/index.jsp
+in C:\wamp\www\sabem\protected\views\funcionarios\_view.php (30)
+in C:\wamp\www\sabem\protected\views\funcionarios\index.php (21)
+in C:\wamp\www\sabem\protected\controllers\FuncionariosController.php (206)
+2016/03/06 22:04:32 [error] [php] Trying to get property of non-object (C:\wamp\www\sabem\protected\views\funcionarios\_view.php:34)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\zii\widgets\CListView.php(291): FuncionariosController->renderFile()
+#1 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 C:\wamp\www\sabem\framework\web\CBaseController.php(173): CListView->run()
+#6 C:\wamp\www\sabem\protected\views\funcionarios\index.php(21): FuncionariosController->widget()
+#7 C:\wamp\www\sabem\framework\web\CBaseController.php(126): require()
+#8 C:\wamp\www\sabem\framework\web\CBaseController.php(95): FuncionariosController->renderInternal()
+#9 C:\wamp\www\sabem\framework\web\CController.php(869): FuncionariosController->renderFile()
+#10 C:\wamp\www\sabem\framework\web\CController.php(782): FuncionariosController->renderPartial()
+#11 C:\wamp\www\sabem\protected\controllers\FuncionariosController.php(206): FuncionariosController->render()
+#12 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): FuncionariosController->actionIndex()
+#13 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): FuncionariosController->runAction()
+#15 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): FuncionariosController->filterAccessControl()
+#18 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\wamp\www\sabem\framework\web\CController.php(265): FuncionariosController->runActionWithFilters()
+#21 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): FuncionariosController->run()
+#22 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/funcionarios/index.jsp
+in C:\wamp\www\sabem\protected\views\funcionarios\_view.php (34)
+in C:\wamp\www\sabem\protected\views\funcionarios\index.php (21)
+in C:\wamp\www\sabem\protected\controllers\FuncionariosController.php (206)
+2016/03/06 23:58:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\wamp\www\sabem\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/view')
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sabem/usuario/1.jsp
+HTTP_REFERER=http://localhost/sabem/usuario/1.jsp
+---
+2016/03/06 23:58:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\wamp\www\sabem\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/view')
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sabem/usuario/1.jsp
+HTTP_REFERER=http://localhost/sabem/usuario/index.jsp
+---
+2016/03/06 23:58:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\wamp\www\sabem\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/index')
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sabem/usuario/index.jsp
+HTTP_REFERER=http://localhost/sabem/fechaAsc/index.jsp
+---
+2016/03/06 23:59:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "logouy"' in C:\wamp\www\sabem\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('logouy')
+#1 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sabem/logouy
+---
+2016/03/06 23:59:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "logout"' in C:\wamp\www\sabem\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('logout')
+#1 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sabem/logout
+---
+2016/03/06 23:59:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "logout"' in C:\wamp\www\sabem\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('logout')
+#1 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sabem/logout.jsp
+---
+2016/03/06 23:59:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "cerrar"' in C:\wamp\www\sabem\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('cerrar')
+#1 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sabem/cerrar.jsp
+---
+2016/03/06 23:59:52 [error] [php] Trying to get property of non-object (C:\wamp\www\sabem\protected\components\UserIdentity.php:33)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute()
+#1 C:\wamp\www\sabem\framework\base\CModel.php(159): CInlineValidator->validate()
+#2 C:\wamp\www\sabem\protected\controllers\SiteController.php(106): LoginForm->validate()
+#3 C:\wamp\www\sabem\protected\controllers\SiteController.php(36): SiteController->actionLogin()
+#4 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\www\sabem\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\www\sabem\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/
+in C:\wamp\www\sabem\protected\components\UserIdentity.php (33)
+in C:\wamp\www\sabem\protected\models\LoginForm.php (54)
+in C:\wamp\www\sabem\protected\controllers\SiteController.php (106)
+2016/03/07 00:00:13 [error] [php] Trying to get property of non-object (C:\wamp\www\sabem\protected\components\UserIdentity.php:33)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute()
+#1 C:\wamp\www\sabem\framework\base\CModel.php(159): CInlineValidator->validate()
+#2 C:\wamp\www\sabem\protected\controllers\SiteController.php(106): LoginForm->validate()
+#3 C:\wamp\www\sabem\protected\controllers\SiteController.php(36): SiteController->actionLogin()
+#4 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\www\sabem\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\www\sabem\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/
+in C:\wamp\www\sabem\protected\components\UserIdentity.php (33)
+in C:\wamp\www\sabem\protected\models\LoginForm.php (54)
+in C:\wamp\www\sabem\protected\controllers\SiteController.php (106)
+2016/03/07 00:00:21 [error] [php] Trying to get property of non-object (C:\wamp\www\sabem\protected\components\UserIdentity.php:33)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute()
+#1 C:\wamp\www\sabem\framework\base\CModel.php(159): CInlineValidator->validate()
+#2 C:\wamp\www\sabem\protected\controllers\SiteController.php(106): LoginForm->validate()
+#3 C:\wamp\www\sabem\protected\controllers\SiteController.php(36): SiteController->actionLogin()
+#4 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\www\sabem\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\www\sabem\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/
+in C:\wamp\www\sabem\protected\components\UserIdentity.php (33)
+in C:\wamp\www\sabem\protected\models\LoginForm.php (54)
+in C:\wamp\www\sabem\protected\controllers\SiteController.php (106)
+2016/03/07 00:02:43 [error] [php] Trying to get property of non-object (C:\wamp\www\sabem\protected\components\UserIdentity.php:33)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute()
+#1 C:\wamp\www\sabem\framework\base\CModel.php(159): CInlineValidator->validate()
+#2 C:\wamp\www\sabem\protected\controllers\SiteController.php(106): LoginForm->validate()
+#3 C:\wamp\www\sabem\protected\controllers\SiteController.php(251): SiteController->actionLogin()
+#4 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): SiteController->actionPrincipal()
+#5 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\www\sabem\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\www\sabem\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/site/principal.jsp
+in C:\wamp\www\sabem\protected\components\UserIdentity.php (33)
+in C:\wamp\www\sabem\protected\models\LoginForm.php (54)
+in C:\wamp\www\sabem\protected\controllers\SiteController.php (106)
+2016/03/07 00:07:01 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`bombesh_test`.`authassignment`, CONSTRAINT `authassignment_ibfk_1` FOREIGN KEY (`itemname`) REFERENCES `authitem` (`name`) ON DELETE CASCADE ON UPDATE CASCADE). La sentencia SQL ejecutada fue: INSERT INTO `AuthAssignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data).
+in C:\wamp\www\sabem\protected\models\Usuario.php (161)
+in C:\wamp\www\sabem\protected\models\Usuario.php (155)
+in C:\wamp\www\sabem\protected\controllers\SiteController.php (154)
+2016/03/07 00:07:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`bombesh_test`.`authassignment`, CONSTRAINT `authassignment_ibfk_1` FOREIGN KEY (`itemname`) REFERENCES `authitem` (`name`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `AuthAssignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data)' in C:\wamp\www\sabem\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\sabem\framework\db\CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 C:\wamp\www\sabem\framework\web\auth\CDbAuthManager.php(263): CDbCommand->insert('AuthAssignment', Array)
+#2 C:\wamp\www\sabem\protected\models\Usuario.php(161): CDbAuthManager->assign('demo', 2)
+#3 C:\wamp\www\sabem\protected\models\Usuario.php(155): Usuario->asignarRoleDefault(2)
+#4 C:\wamp\www\sabem\protected\controllers\SiteController.php(154): Usuario->guardarUsuario('Jose', 'Clave.12345', '623255', 'dcabanales@gmai...')
+#5 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistrar()
+#6 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\sabem\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('registrar')
+#10 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registrar')
+#11 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/sabem/site/registrar.jsp
+HTTP_REFERER=http://localhost/sabem/site/registrar.jsp
+---
+2016/03/07 00:29:30 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`bombesh_test`.`authassignment`, CONSTRAINT `authassignment_ibfk_1` FOREIGN KEY (`itemname`) REFERENCES `authitem` (`name`) ON DELETE CASCADE ON UPDATE CASCADE). La sentencia SQL ejecutada fue: INSERT INTO `AuthAssignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data).
+in C:\wamp\www\sabem\protected\models\Usuario.php (161)
+in C:\wamp\www\sabem\protected\models\Usuario.php (155)
+in C:\wamp\www\sabem\protected\controllers\SiteController.php (154)
+2016/03/07 00:29:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`bombesh_test`.`authassignment`, CONSTRAINT `authassignment_ibfk_1` FOREIGN KEY (`itemname`) REFERENCES `authitem` (`name`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `AuthAssignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data)' in C:\wamp\www\sabem\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\sabem\framework\db\CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 C:\wamp\www\sabem\framework\web\auth\CDbAuthManager.php(263): CDbCommand->insert('AuthAssignment', Array)
+#2 C:\wamp\www\sabem\protected\models\Usuario.php(161): CDbAuthManager->assign('demo', 2)
+#3 C:\wamp\www\sabem\protected\models\Usuario.php(155): Usuario->asignarRoleDefault(2)
+#4 C:\wamp\www\sabem\protected\controllers\SiteController.php(154): Usuario->guardarUsuario('Jose', 'Clave.123', '623255', 'dcabanales@gmai...')
+#5 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistrar()
+#6 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\sabem\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('registrar')
+#10 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registrar')
+#11 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/sabem/site/registrar.jsp
+HTTP_REFERER=http://localhost/sabem/site/registrar.jsp
+---
+2016/03/07 00:31:38 [error] [php] Trying to get property of non-object (C:\wamp\www\sabem\protected\components\UserIdentity.php:26)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute()
+#1 C:\wamp\www\sabem\framework\base\CModel.php(159): CInlineValidator->validate()
+#2 C:\wamp\www\sabem\protected\controllers\SiteController.php(106): LoginForm->validate()
+#3 C:\wamp\www\sabem\protected\controllers\SiteController.php(36): SiteController->actionLogin()
+#4 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\www\sabem\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\www\sabem\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/
+in C:\wamp\www\sabem\protected\components\UserIdentity.php (26)
+in C:\wamp\www\sabem\protected\models\LoginForm.php (54)
+in C:\wamp\www\sabem\protected\controllers\SiteController.php (106)
+2016/03/07 00:33:32 [error] [php] Trying to get property of non-object (C:\wamp\www\sabem\protected\components\UserIdentity.php:26)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute()
+#1 C:\wamp\www\sabem\framework\base\CModel.php(159): CInlineValidator->validate()
+#2 C:\wamp\www\sabem\protected\controllers\SiteController.php(106): LoginForm->validate()
+#3 C:\wamp\www\sabem\protected\controllers\SiteController.php(36): SiteController->actionLogin()
+#4 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\www\sabem\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\www\sabem\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/
+in C:\wamp\www\sabem\protected\components\UserIdentity.php (26)
+in C:\wamp\www\sabem\protected\models\LoginForm.php (54)
+in C:\wamp\www\sabem\protected\controllers\SiteController.php (106)
+2016/03/06 19:20:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\sabem\protected\controllers\SistemaController.php:172
+Stack trace:
+#0 C:\wamp\www\sabem\protected\controllers\SistemaController.php(55): SistemaController->loadModel('1')
+#1 [internal function]: SistemaController->actionView('1')
+#2 C:\wamp\www\sabem\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SistemaController), Array)
+#3 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SistemaController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('sistema/view')
+#14 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sabem/sistema/1.jsp
+HTTP_REFERER=http://localhost/sabem/Funcionarios/saludo
+---
+2016/03/06 19:20:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\sabem\protected\controllers\SistemaController.php:172
+Stack trace:
+#0 C:\wamp\www\sabem\protected\controllers\SistemaController.php(55): SistemaController->loadModel('1')
+#1 [internal function]: SistemaController->actionView('1')
+#2 C:\wamp\www\sabem\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SistemaController), Array)
+#3 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SistemaController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('sistema/view')
+#14 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sabem/sistema/1.jsp
+HTTP_REFERER=http://localhost/sabem/sistema/1.jsp
+---
+2016/03/06 19:22:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\sabem\protected\controllers\SistemaController.php:172
+Stack trace:
+#0 C:\wamp\www\sabem\protected\controllers\SistemaController.php(55): SistemaController->loadModel('1')
+#1 [internal function]: SistemaController->actionView('1')
+#2 C:\wamp\www\sabem\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SistemaController), Array)
+#3 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SistemaController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('sistema/view')
+#14 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sabem/sistema/1.jsp
+HTTP_REFERER=http://localhost/sabem/Funcionarios/saludo
+---
+2016/03/06 19:40:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\sabem\protected\controllers\FechaAscController.php:172
+Stack trace:
+#0 C:\wamp\www\sabem\protected\controllers\FechaAscController.php(103): FechaAscController->loadModel('3')
+#1 [internal function]: FechaAscController->actionUpdate('3')
+#2 C:\wamp\www\sabem\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(FechaAscController), Array)
+#3 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(FechaAscController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('update')
+#13 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('fechaasc/update')
+#14 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sabem/fechaasc/update/3.jsp
+HTTP_REFERER=http://localhost/sabem/fechaasc/3.jsp
+---
+2016/03/07 01:13:33 [error] [php] Trying to get property of non-object (C:\wamp\www\sabem\protected\models\Postularse.php:202)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): PostularseController->actionCreate()
+#1 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): PostularseController->runAction()
+#3 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): PostularseController->filterAccessControl()
+#6 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\sabem\framework\web\CController.php(265): PostularseController->runActionWithFilters()
+#9 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): PostularseController->run()
+#10 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/Postularse/create.jsp
+in C:\wamp\www\sabem\protected\models\Postularse.php (202)
+in C:\wamp\www\sabem\protected\models\Postularse.php (192)
+in C:\wamp\www\sabem\protected\controllers\PostularseController.php (119)
+2016/03/07 01:20:57 [error] [php] Trying to get property of non-object (C:\wamp\www\sabem\protected\models\Postularse.php:202)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): PostularseController->actionCreate()
+#1 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): PostularseController->runAction()
+#3 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): PostularseController->filterAccessControl()
+#6 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\sabem\framework\web\CController.php(265): PostularseController->runActionWithFilters()
+#9 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): PostularseController->run()
+#10 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/Postularse/create.jsp
+in C:\wamp\www\sabem\protected\models\Postularse.php (202)
+in C:\wamp\www\sabem\protected\models\Postularse.php (192)
+in C:\wamp\www\sabem\protected\controllers\PostularseController.php (119)
+2016/03/07 01:28:47 [error] [php] Trying to get property of non-object (C:\wamp\www\sabem\protected\models\Postularse.php:212)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): PostularseController->runAction()
+#2 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): PostularseController->filterAccessControl()
+#5 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\sabem\framework\web\CController.php(265): PostularseController->runActionWithFilters()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): PostularseController->run()
+#9 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/Postularse/create.jsp
+in C:\wamp\www\sabem\protected\models\Postularse.php (212)
+in C:\wamp\www\sabem\protected\controllers\PostularseController.php (120)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/07 01:34:26 [error] [php] Undefined offset: 0 (C:\wamp\www\sabem\protected\models\Funcionarios.php:310)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): PostularseController->actionCreate()
+#1 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): PostularseController->runAction()
+#3 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): PostularseController->filterAccessControl()
+#6 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\sabem\framework\web\CController.php(265): PostularseController->runActionWithFilters()
+#9 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): PostularseController->run()
+#10 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/Postularse/create.jsp
+in C:\wamp\www\sabem\protected\models\Funcionarios.php (310)
+in C:\wamp\www\sabem\protected\models\Postularse.php (311)
+in C:\wamp\www\sabem\protected\controllers\PostularseController.php (122)
+2016/03/07 07:31:17 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '1' pour la clef 'PRIMARY'. La sentencia SQL ejecutada fue: INSERT INTO  `bomgesh`.`tbl_asc_competencia` (
+		`id_competencia` ,
+		`Cedula` ,
+		`num_demuestra_eficaz` ,
+		`num_respetado_meritos` ,
+		`num_nunca_decisi_impul` ,
+		`num_habla_diccion_cohe` ,
+		`num_actualizado_bom` ,
+		`num_TotComPorc` ,
+		`num_TotComNota` ,
+		`id_evaluador` ,
+		`id_conf_asc_fecha`)
+		VALUES ('1',  '623255',  '0.800',  '0.800',  '0.800',  '0.800',  '0.800', '4.000',  '20.000',  '2',  '5');.
+in C:\wamp\www\sabem\protected\models\Competencia.php (210)
+in C:\wamp\www\sabem\protected\controllers\FuncionariosController.php (596)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/07 07:31:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '1' pour la clef 'PRIMARY'. The SQL statement executed was: INSERT INTO  `bomgesh`.`tbl_asc_competencia` (
+		`id_competencia` ,
+		`Cedula` ,
+		`num_demuestra_eficaz` ,
+		`num_respetado_meritos` ,
+		`num_nunca_decisi_impul` ,
+		`num_habla_diccion_cohe` ,
+		`num_actualizado_bom` ,
+		`num_TotComPorc` ,
+		`num_TotComNota` ,
+		`id_evaluador` ,
+		`id_conf_asc_fecha`)
+		VALUES ('1',  '623255',  '0.800',  '0.800',  '0.800',  '0.800',  '0.800', '4.000',  '20.000',  '2',  '5');' in C:\wamp\www\sabem\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\sabem\protected\models\Competencia.php(210): CDbCommand->execute()
+#1 C:\wamp\www\sabem\protected\controllers\FuncionariosController.php(596): Competencia::insertar('623255', '6841498')
+#2 [internal function]: FuncionariosController->actionCargarVeinteC('623255', '6841498')
+#3 C:\wamp\www\sabem\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(FuncionariosController), Array)
+#4 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(FuncionariosController), Object(ReflectionMethod), Array)
+#5 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('cargarveintec')
+#14 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('funcionarios/ca...')
+#15 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/sabem/funcionarios/cargarveintec.jsp?cedula=623255&recepcion=6841498
+HTTP_REFERER=http://localhost/sabem/funcionarios/evaluacionesyExamenes.jsp?cedula=623255
+---
+2016/03/07 08:08:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "peticionajax" solicitada.' in C:\wamp\www\sabem\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CController.php(270): CController->missingAction('peticionajax')
+#1 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('peticionajax')
+#2 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('funcionarios/pe...')
+#3 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sabem/funcionarios/peticionajax.jsp
+HTTP_REFERER=http://localhost/sabem/funcionarios/evaluacionesyExamenes.jsp?cedula=623255
+---
+2016/03/07 08:08:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "peticionajax" solicitada.' in C:\wamp\www\sabem\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CController.php(270): CController->missingAction('peticionajax')
+#1 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('peticionajax')
+#2 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('funcionarios/pe...')
+#3 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sabem/funcionarios/peticionajax.jsp
+HTTP_REFERER=http://localhost/sabem/funcionarios/evaluacionesyExamenes.jsp?cedula=623255
+---
+2016/03/07 08:08:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "peticionajax" solicitada.' in C:\wamp\www\sabem\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CController.php(270): CController->missingAction('peticionajax')
+#1 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('peticionajax')
+#2 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('funcionarios/pe...')
+#3 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sabem/funcionarios/peticionajax.jsp
+HTTP_REFERER=http://localhost/sabem/funcionarios/evaluacionesyExamenes.jsp?cedula=623255
+---
+2016/03/07 13:06:48 [error] [exception.CException] exception 'CException' with message 'La propiedad "FechaAsc"."porc_academico" no se encuentra definida.' in C:\wamp\www\sabem\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\sabem\framework\db\ar\CActiveRecord.php(145): CComponent->__get('porc_academico')
+#1 C:\wamp\www\sabem\protected\views\fechaAsc\_view.php(31): CActiveRecord->__get('porc_academico')
+#2 C:\wamp\www\sabem\framework\web\CBaseController.php(130): require('C:\\wamp\\www\\sab...')
+#3 C:\wamp\www\sabem\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\sab...', Array, false)
+#4 C:\wamp\www\sabem\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('C:\\wamp\\www\\sab...', Array)
+#5 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#9 C:\wamp\www\sabem\framework\web\CBaseController.php(173): CBaseListView->run()
+#10 C:\wamp\www\sabem\protected\views\fechaAsc\index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\wamp\www\sabem\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\sab...')
+#12 C:\wamp\www\sabem\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\sab...', Array, true)
+#13 C:\wamp\www\sabem\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\sab...', Array, true)
+#14 C:\wamp\www\sabem\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 C:\wamp\www\sabem\protected\controllers\FechaAscController.php(143): CController->render('index', Array)
+#16 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): FechaAscController->actionIndex()
+#17 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('index')
+#26 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('fechaAsc/index')
+#27 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/sabem/fechaAsc/index.jsp
+HTTP_REFERER=http://localhost/sabem/ascenso/view.jsp
+---
+2016/03/08 03:48:33 [error] [php] session_regenerate_id(): Session object destruction failed (C:\wamp\www\sabem\framework\web\CHttpSession.php:181)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\auth\CWebUser.php(233): CWebUser->changeIdentity()
+#1 C:\wamp\www\sabem\protected\models\LoginForm.php(73): CWebUser->login()
+#2 C:\wamp\www\sabem\protected\controllers\SiteController.php(106): LoginForm->login()
+#3 C:\wamp\www\sabem\protected\controllers\SiteController.php(36): SiteController->actionLogin()
+#4 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\wamp\www\sabem\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\wamp\www\sabem\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/
+in C:\wamp\www\sabem\protected\models\LoginForm.php (73)
+in C:\wamp\www\sabem\protected\controllers\SiteController.php (106)
+in C:\wamp\www\sabem\protected\controllers\SiteController.php (36)
+2016/03/08 03:49:06 [error] [exception.CException] exception 'CException' with message 'La propiedad "FechaAsc"."porc_academico" no se encuentra definida.' in C:\wamp\www\sabem\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\sabem\framework\db\ar\CActiveRecord.php(145): CComponent->__get('porc_academico')
+#1 C:\wamp\www\sabem\protected\views\fechaAsc\_view.php(31): CActiveRecord->__get('porc_academico')
+#2 C:\wamp\www\sabem\framework\web\CBaseController.php(130): require('C:\\wamp\\www\\sab...')
+#3 C:\wamp\www\sabem\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\sab...', Array, false)
+#4 C:\wamp\www\sabem\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('C:\\wamp\\www\\sab...', Array)
+#5 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#9 C:\wamp\www\sabem\framework\web\CBaseController.php(173): CBaseListView->run()
+#10 C:\wamp\www\sabem\protected\views\fechaAsc\index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\wamp\www\sabem\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\sab...')
+#12 C:\wamp\www\sabem\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\sab...', Array, true)
+#13 C:\wamp\www\sabem\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\sab...', Array, true)
+#14 C:\wamp\www\sabem\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 C:\wamp\www\sabem\protected\controllers\FechaAscController.php(143): CController->render('index', Array)
+#16 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): FechaAscController->actionIndex()
+#17 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('index')
+#26 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('fechaAsc/index')
+#27 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/sabem/fechaAsc/index.jsp
+HTTP_REFERER=http://localhost/sabem/Funcionarios/saludo
+---
+2016/03/12 06:24:38 [error] [exception.CException] exception 'CException' with message 'La propiedad "Funcionarios"."cedula" no se encuentra definida.' in C:\wamp\www\sabem\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\sabem\framework\db\ar\CActiveRecord.php(145): CComponent->__get('cedula')
+#1 C:\wamp\www\sabem\protected\controllers\FuncionariosController.php(118): CActiveRecord->__get('cedula')
+#2 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): FuncionariosController->actionCreate()
+#3 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('funcionarios/cr...')
+#13 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/sabem/funcionarios/create.jsp
+HTTP_REFERER=http://localhost/sabem/funcionarios/create.jsp
+---
+2016/03/12 06:27:11 [error] [php] include(FuncionariosNivelAcademico.php): failed to open stream: No such file or directory (C:\wamp\www\sabem\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\sabem\protected\controllers\FuncionariosController.php(123): spl_autoload_call()
+#1 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): FuncionariosController->actionCreate()
+#2 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): FuncionariosController->runAction()
+#4 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): FuncionariosController->filterAccessControl()
+#7 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\www\sabem\framework\web\CController.php(265): FuncionariosController->runActionWithFilters()
+#10 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): FuncionariosController->run()
+#11 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/funcionarios/create.jsp
+in C:\wamp\www\sabem\protected\controllers\FuncionariosController.php (123)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/13 01:49:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "tbl_asc_nota_total"' in C:\wamp\www\sabem\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('tbl_asc_nota_to...')
+#1 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sabem/tbl_asc_nota_total
+---
+2016/03/13 16:57:50 [error] [exception.CException] exception 'CException' with message 'La propiedad "Jerarquia"."Descripcion_jerarquia" no se encuentra definida.' in C:\wamp\www\sabem\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\sabem\framework\db\ar\CActiveRecord.php(145): CComponent->__get('Descripcion_jer...')
+#1 C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php(126): CActiveRecord->__get('Descripcion_jer...')
+#2 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): TblAscNotaTotalController->actionIndex()
+#3 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('tblascnotatotal...')
+#13 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/sabem/tblascnotatotal/index.jsp
+HTTP_REFERER=http://localhost/sabem/ascenso/view.jsp
+---
+2016/03/13 16:59:07 [error] [exception.CException] exception 'CException' with message 'La propiedad "CActiveDataProvider"."Descripcion_Jerarquia" no se encuentra definida.' in C:\wamp\www\sabem\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php(126): CComponent->__get('Descripcion_Jer...')
+#1 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): TblAscNotaTotalController->actionIndex()
+#2 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('tblascnotatotal...')
+#12 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/sabem/tblascnotatotal/index.jsp
+HTTP_REFERER=http://localhost/sabem/ascenso/view.jsp
+---
+2016/03/13 17:00:16 [error] [php] Undefined variable: variable (C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php:126)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/index.jsp
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (126)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/13 17:00:27 [error] [php] Trying to get property of non-object (C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php:127)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/index.jsp
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (127)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/13 18:58:45 [error] [php] Non-static method FechaAsc::getLastConfAscFecha() should not be called statically, assuming $this from incompatible context (C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php:126)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/index.jsp
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (126)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/13 18:59:20 [error] [system.db.CDbCommand] CDbCommand::fetch() falló: SQLSTATE[42S22]: Column not found: 1054 Champ 'id' inconnu dans order clause. La sentencia SQL ejecutada fue: SELECT * FROM `tbl_asc_config_fecha_asc` `t` WHERE (des_proceso_asc=:des1) OR (des_estatus_cond=:des2) ORDER BY id DESC LIMIT 1.
+in C:\wamp\www\sabem\protected\models\FechaAsc.php (116)
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (126)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/13 18:59:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[42S22]: Column not found: 1054 Champ 'id' inconnu dans order clause. The SQL statement executed was: SELECT * FROM `tbl_asc_config_fecha_asc` `t` WHERE (des_proceso_asc=:des1) OR (des_estatus_cond=:des2) ORDER BY id DESC LIMIT 1' in C:\wamp\www\sabem\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\sabem\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\wamp\www\sabem\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryRow()
+#2 C:\wamp\www\sabem\framework\db\ar\CActiveRecord.php(1456): CActiveRecord->query(Object(CDbCriteria))
+#3 C:\wamp\www\sabem\protected\models\FechaAsc.php(116): CActiveRecord->find(Object(CDbCriteria))
+#4 C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php(126): FechaAsc::getLastConfAscFecha()
+#5 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): TblAscNotaTotalController->actionIndex()
+#6 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('index')
+#15 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('tblascnotatotal...')
+#16 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/sabem/tblascnotatotal/index.jsp
+HTTP_REFERER=http://localhost/sabem/fechaasc/update/5.jsp
+---
+2016/03/13 19:00:21 [error] [php] Undefined variable: NotasTotales (C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php:136)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/index.jsp
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (136)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/13 22:50:40 [error] [php] Undefined variable: jerarquia (C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php:134)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/index.jsp
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (134)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/13 22:51:22 [error] [php] Undefined variable: jeraraquia (C:\wamp\www\sabem\protected\models\TblAscNotaTotal.php:106)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#2 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#5 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#9 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/index.jsp
+in C:\wamp\www\sabem\protected\models\TblAscNotaTotal.php (106)
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (134)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/13 22:51:53 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php:136)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/index.jsp
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (136)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/13 22:54:27 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php:135)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/index.jsp
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (135)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/13 22:56:29 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php:136)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/index.jsp
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (136)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/13 22:56:51 [error] [php] Non-static method TblAscNotaTotal::getNotasPorJerarquia() should not be called statically, assuming $this from incompatible context (C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php:134)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/index.jsp
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (134)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/13 22:57:21 [error] [php] Undefined variable: NotasPorJeraquia (C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php:142)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/index.jsp
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (142)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/13 23:00:51 [error] [php] Undefined offset: 0 (C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php:149)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/index.jsp
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (149)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/13 23:02:15 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php:149)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/index.jsp
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (149)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/13 23:52:15 [error] [php] Undefined variable: funcionaio (C:\wamp\www\sabem\protected\views\tblAscNotaTotal\_view.php:30)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CController.php(869): TblAscNotaTotalController->renderFile()
+#1 C:\wamp\www\sabem\protected\views\tblAscNotaTotal\index.php(17): TblAscNotaTotalController->renderPartial()
+#2 C:\wamp\www\sabem\framework\web\CBaseController.php(126): require()
+#3 C:\wamp\www\sabem\framework\web\CBaseController.php(95): TblAscNotaTotalController->renderInternal()
+#4 C:\wamp\www\sabem\framework\web\CController.php(869): TblAscNotaTotalController->renderFile()
+#5 C:\wamp\www\sabem\framework\web\CController.php(782): TblAscNotaTotalController->renderPartial()
+#6 C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php(154): TblAscNotaTotalController->render()
+#7 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): TblAscNotaTotalController->actionIndex()
+#8 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#10 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#13 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#16 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#17 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/index.jsp
+in C:\wamp\www\sabem\protected\views\tblAscNotaTotal\_view.php (30)
+in C:\wamp\www\sabem\protected\views\tblAscNotaTotal\index.php (17)
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (154)
+2016/03/13 23:52:28 [error] [exception.CException] exception 'CException' with message 'La propiedad "Funcionarios"."num_nota_total" no se encuentra definida.' in C:\wamp\www\sabem\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\sabem\framework\db\ar\CActiveRecord.php(145): CComponent->__get('num_nota_total')
+#1 C:\wamp\www\sabem\protected\views\tblAscNotaTotal\_view.php(30): CActiveRecord->__get('num_nota_total')
+#2 C:\wamp\www\sabem\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\sab...')
+#3 C:\wamp\www\sabem\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\sab...', Array, true)
+#4 C:\wamp\www\sabem\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\sab...', Array, true)
+#5 C:\wamp\www\sabem\protected\views\tblAscNotaTotal\index.php(17): CController->renderPartial('_view', Array)
+#6 C:\wamp\www\sabem\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\sab...')
+#7 C:\wamp\www\sabem\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\sab...', Array, true)
+#8 C:\wamp\www\sabem\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\sab...', Array, true)
+#9 C:\wamp\www\sabem\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#10 C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php(154): CController->render('index', Array)
+#11 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): TblAscNotaTotalController->actionIndex()
+#12 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('index')
+#21 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('tblascnotatotal...')
+#22 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/sabem/tblascnotatotal/index.jsp
+HTTP_REFERER=http://localhost/sabem/fechaasc/update/5.jsp
+---
+2016/03/13 23:54:16 [error] [exception.CException] exception 'CException' with message 'La propiedad "Funcionarios"."num_nota_total" no se encuentra definida.' in C:\wamp\www\sabem\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\sabem\framework\db\ar\CActiveRecord.php(161): CComponent->__set('num_nota_total', '50.000')
+#1 C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php(141): CActiveRecord->__set('num_nota_total', '50.000')
+#2 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): TblAscNotaTotalController->actionIndex()
+#3 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('tblascnotatotal...')
+#13 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/sabem/tblascnotatotal/index.jsp
+HTTP_REFERER=http://localhost/sabem/fechaasc/update/5.jsp
+---
+2016/03/14 00:50:01 [error] [php] urlencode() expects parameter 1 to be string, array given (C:\wamp\www\sabem\framework\web\CUrlManager.php:761)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\base\CApplication.php(543): CUrlManager->createUrl()
+#1 C:\wamp\www\sabem\framework\web\CController.php(967): CWebApplication->createUrl()
+#2 C:\wamp\www\sabem\framework\base\CComponent.php(612) : eval()'d code(1): TblAscNotaTotalController->createUrl()
+#3 C:\wamp\www\sabem\framework\base\CComponent.php(612): eval()
+#4 C:\wamp\www\sabem\framework\zii\widgets\grid\CButtonColumn.php(340): CButtonColumn->evaluateExpression()
+#5 C:\wamp\www\sabem\framework\zii\widgets\grid\CButtonColumn.php(319): CButtonColumn->renderButton()
+#6 C:\wamp\www\sabem\framework\zii\widgets\grid\CGridColumn.php(151): CButtonColumn->renderDataCellContent()
+#7 C:\wamp\www\sabem\framework\zii\widgets\grid\CGridView.php(616): CButtonColumn->renderDataCell()
+#8 C:\wamp\www\sabem\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow()
+#9 C:\wamp\www\sabem\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#10 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#11 unknown(0): CGridView->renderSection()
+#12 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#13 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(135): CGridView->renderContent()
+#14 C:\wamp\www\sabem\framework\web\CBaseController.php(173): CGridView->run()
+#15 C:\wamp\www\sabem\protected\views\tblAscNotaTotal\admin.php(61): TblAscNotaTotalController->widget()
+#16 C:\wamp\www\sabem\framework\web\CBaseController.php(126): require()
+#17 C:\wamp\www\sabem\framework\web\CBaseController.php(95): TblAscNotaTotalController->renderInternal()
+#18 C:\wamp\www\sabem\framework\web\CController.php(869): TblAscNotaTotalController->renderFile()
+#19 C:\wamp\www\sabem\framework\web\CController.php(782): TblAscNotaTotalController->renderPartial()
+#20 C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php(171): TblAscNotaTotalController->render()
+#21 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): TblAscNotaTotalController->actionAdmin()
+#22 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#23 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#24 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#25 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#26 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#27 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#28 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#29 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#30 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#31 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#32 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#33 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/admin.jsp
+in C:\wamp\www\sabem\protected\views\tblAscNotaTotal\admin.php (61)
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (171)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/14 00:50:12 [error] [php] urlencode() expects parameter 1 to be string, array given (C:\wamp\www\sabem\framework\web\CUrlManager.php:761)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\base\CApplication.php(543): CUrlManager->createUrl()
+#1 C:\wamp\www\sabem\framework\web\CController.php(967): CWebApplication->createUrl()
+#2 C:\wamp\www\sabem\framework\base\CComponent.php(612) : eval()'d code(1): TblAscNotaTotalController->createUrl()
+#3 C:\wamp\www\sabem\framework\base\CComponent.php(612): eval()
+#4 C:\wamp\www\sabem\framework\zii\widgets\grid\CButtonColumn.php(340): CButtonColumn->evaluateExpression()
+#5 C:\wamp\www\sabem\framework\zii\widgets\grid\CButtonColumn.php(319): CButtonColumn->renderButton()
+#6 C:\wamp\www\sabem\framework\zii\widgets\grid\CGridColumn.php(151): CButtonColumn->renderDataCellContent()
+#7 C:\wamp\www\sabem\framework\zii\widgets\grid\CGridView.php(616): CButtonColumn->renderDataCell()
+#8 C:\wamp\www\sabem\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow()
+#9 C:\wamp\www\sabem\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#10 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#11 unknown(0): CGridView->renderSection()
+#12 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#13 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(135): CGridView->renderContent()
+#14 C:\wamp\www\sabem\framework\web\CBaseController.php(173): CGridView->run()
+#15 C:\wamp\www\sabem\protected\views\tblAscNotaTotal\admin.php(61): TblAscNotaTotalController->widget()
+#16 C:\wamp\www\sabem\framework\web\CBaseController.php(126): require()
+#17 C:\wamp\www\sabem\framework\web\CBaseController.php(95): TblAscNotaTotalController->renderInternal()
+#18 C:\wamp\www\sabem\framework\web\CController.php(869): TblAscNotaTotalController->renderFile()
+#19 C:\wamp\www\sabem\framework\web\CController.php(782): TblAscNotaTotalController->renderPartial()
+#20 C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php(171): TblAscNotaTotalController->render()
+#21 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): TblAscNotaTotalController->actionAdmin()
+#22 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#23 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#24 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#25 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#26 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#27 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#28 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#29 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#30 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#31 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#32 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#33 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/admin.jsp
+in C:\wamp\www\sabem\protected\views\tblAscNotaTotal\admin.php (61)
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (171)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/13 19:58:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "FechaAscenso/create"' in C:\wamp\www\sabem\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('FechaAscenso/cr...')
+#1 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sabem/FechaAscenso/create.jsp
+HTTP_REFERER=http://localhost/sabem/tblascnotatotal/index.jsp
+---
+2016/03/13 20:07:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "FechaAscenso/create"' in C:\wamp\www\sabem\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('FechaAscenso/cr...')
+#1 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sabem/FechaAscenso/create.jsp
+HTTP_REFERER=http://localhost/sabem/tblascnotatotal/index.jsp
+---
+2016/03/13 20:15:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "FechaAscenso/create"' in C:\wamp\www\sabem\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('FechaAscenso/cr...')
+#1 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sabem/FechaAscenso/create.jsp
+HTTP_REFERER=http://localhost/sabem/index.php?r=gii
+---
+2016/03/13 20:15:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "FechaAscenso/create"' in C:\wamp\www\sabem\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('FechaAscenso/cr...')
+#1 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sabem/FechaAscenso/create.jsp
+HTTP_REFERER=http://localhost/sabem/index.php?r=gii
+---
+2016/03/13 20:15:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "FechaAscenso/create"' in C:\wamp\www\sabem\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('FechaAscenso/cr...')
+#1 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sabem/FechaAscenso/create.jsp
+HTTP_REFERER=http://localhost/sabem/FechaAscenso/create.jsp
+---
+2016/03/13 20:16:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "FechaAscenso/create"' in C:\wamp\www\sabem\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('FechaAscenso/cr...')
+#1 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sabem/FechaAscenso/create.jsp
+HTTP_REFERER=http://localhost/sabem/FechaAscenso/create.jsp
+---
+2016/03/13 20:19:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "FechaAscenso/create"' in C:\wamp\www\sabem\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('FechaAscenso/cr...')
+#1 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sabem/FechaAscenso/create.jsp
+HTTP_REFERER=http://localhost/sabem/tblascnotatotal/index.jsp
+---
+2016/03/14 01:49:27 [error] [exception.CException] exception 'CException' with message 'La propiedad "TblAscNotaTotal"."des_ascenso" no se encuentra definida.' in C:\wamp\www\sabem\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\sabem\framework\db\ar\CActiveRecord.php(145): CComponent->__get('des_ascenso')
+#1 C:\wamp\www\sabem\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('des_ascenso')
+#2 C:\wamp\www\sabem\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(TblAscNotaTotal), 'des_ascenso')
+#3 C:\wamp\www\sabem\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(TblAscNotaTotal), 'des_ascenso', Array)
+#4 C:\wamp\www\sabem\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(TblAscNotaTotal), 'des_ascenso', Array)
+#5 C:\wamp\www\sabem\protected\views\tblAscNotaTotal\_form.php(42): CActiveForm->textField(Object(TblAscNotaTotal), 'des_ascenso')
+#6 C:\wamp\www\sabem\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\sab...')
+#7 C:\wamp\www\sabem\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\sab...', Array, true)
+#8 C:\wamp\www\sabem\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\sab...', Array, true)
+#9 C:\wamp\www\sabem\protected\views\tblAscNotaTotal\create.php(18): CController->renderPartial('_form', Array)
+#10 C:\wamp\www\sabem\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\sab...')
+#11 C:\wamp\www\sabem\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\sab...', Array, true)
+#12 C:\wamp\www\sabem\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\sab...', Array, true)
+#13 C:\wamp\www\sabem\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php(79): CController->render('create', Array)
+#15 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): TblAscNotaTotalController->actionCreate()
+#16 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('create')
+#25 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('tblascnotatotal...')
+#26 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/sabem/tblascnotatotal/create.jsp
+HTTP_REFERER=http://localhost/sabem/FechaAscenso/create.jsp
+---
+2016/03/13 21:14:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\wamp\www\sabem\framework\web\CController.php:336
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('create')
+#9 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('Postulados/Crea...')
+#10 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/sabem/Postulados/Create.jsp
+---
+2016/03/14 02:44:20 [error] [php] Missing argument 1 for TblAscNotaTotal::listFuncionarios(), called in C:\wamp\www\sabem\protected\views\tblAscNotaTotal\_form.php on line 28 and defined (C:\wamp\www\sabem\protected\models\TblAscNotaTotal.php:116)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CBaseController.php(95): TblAscNotaTotalController->renderInternal()
+#1 C:\wamp\www\sabem\framework\web\CController.php(869): TblAscNotaTotalController->renderFile()
+#2 C:\wamp\www\sabem\protected\views\tblAscNotaTotal\create.php(18): TblAscNotaTotalController->renderPartial()
+#3 C:\wamp\www\sabem\framework\web\CBaseController.php(126): require()
+#4 C:\wamp\www\sabem\framework\web\CBaseController.php(95): TblAscNotaTotalController->renderInternal()
+#5 C:\wamp\www\sabem\framework\web\CController.php(869): TblAscNotaTotalController->renderFile()
+#6 C:\wamp\www\sabem\framework\web\CController.php(782): TblAscNotaTotalController->renderPartial()
+#7 C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php(101): TblAscNotaTotalController->render()
+#8 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): TblAscNotaTotalController->actionCreate()
+#9 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#11 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#13 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#14 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#15 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#17 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#18 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/create.jsp
+in C:\wamp\www\sabem\protected\models\TblAscNotaTotal.php (116)
+in C:\wamp\www\sabem\protected\views\tblAscNotaTotal\_form.php (28)
+in C:\wamp\www\sabem\protected\views\tblAscNotaTotal\create.php (18)
+2016/03/14 02:47:48 [error] [exception.CException] exception 'CException' with message 'La propiedad "Funcionarios"."Fecha_ingreso" no se encuentra definida.' in C:\wamp\www\sabem\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\sabem\framework\db\ar\CActiveRecord.php(145): CComponent->__get('Fecha_ingreso')
+#1 C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php(79): CActiveRecord->__get('Fecha_ingreso')
+#2 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): TblAscNotaTotalController->actionCreate()
+#3 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('tblascnotatotal...')
+#13 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/sabem/tblascnotatotal/create.jsp
+HTTP_REFERER=http://localhost/sabem/tblascnotatotal/create.jsp
+---
+2016/03/14 02:48:50 [error] [php] Creating default object from empty value (C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php:88)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/create.jsp
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (88)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/14 02:50:01 [error] [php] Creating default object from empty value (C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php:88)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/create.jsp
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (88)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/14 02:52:35 [error] [php] Creating default object from empty value (C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php:89)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/create.jsp
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (89)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/14 02:59:18 [error] [php] Creating default object from empty value (C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php:89)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/create.jsp
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (89)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/14 03:06:24 [error] [exception.CException] exception 'CException' with message 'La propiedad "FechaAscenso"."des_ascenso" no se encuentra definida.' in C:\wamp\www\sabem\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\sabem\framework\db\ar\CActiveRecord.php(161): CComponent->__set('des_ascenso', 'Post-Mortem')
+#1 C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php(91): CActiveRecord->__set('des_ascenso', 'Post-Mortem')
+#2 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): TblAscNotaTotalController->actionCreate()
+#3 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('tblascnotatotal...')
+#13 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/sabem/tblascnotatotal/create.jsp
+HTTP_REFERER=http://localhost/sabem/tblascnotatotal/create.jsp
+---
+2016/03/14 03:12:53 [error] [php] Creating default object from empty value (C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php:89)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/create.jsp
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (89)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/14 03:13:23 [error] [exception.CException] exception 'CException' with message 'La propiedad "FechaAscenso"."des_ascenso" no se encuentra definida.' in C:\wamp\www\sabem\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\sabem\framework\db\ar\CActiveRecord.php(161): CComponent->__set('des_ascenso', 'Post-Mortem')
+#1 C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php(91): CActiveRecord->__set('des_ascenso', 'Post-Mortem')
+#2 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): TblAscNotaTotalController->actionCreate()
+#3 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('tblascnotatotal...')
+#13 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/sabem/tblascnotatotal/create.jsp
+HTTP_REFERER=http://localhost/sabem/tblascnotatotal/create.jsp
+---
+2016/03/14 03:18:28 [error] [php] Creating default object from empty value (C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php:91)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/create.jsp
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (91)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/14 03:21:39 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '0' pour la clef 'PRIMARY'. La sentencia SQL ejecutada fue: INSERT INTO `tbl_asc_fecha_asc` (`Cedula`, `Cod_Jerarquia`, `fecha_ascenso`, `des_ascenso`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (92)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/14 03:21:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '0' pour la clef 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_asc_fecha_asc` (`Cedula`, `Cod_Jerarquia`, `fecha_ascenso`, `des_ascenso`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\wamp\www\sabem\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\sabem\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\wamp\www\sabem\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php(92): CActiveRecord->save()
+#3 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): TblAscNotaTotalController->actionCreate()
+#4 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('tblascnotatotal...')
+#14 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sabem/tblascnotatotal/create.jsp
+HTTP_REFERER=http://localhost/sabem/tblascnotatotal/create.jsp
+---
+2016/03/14 03:26:48 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '0' pour la clef 'PRIMARY'. La sentencia SQL ejecutada fue: INSERT INTO `tbl_asc_fecha_asc` (`Cedula`, `Cod_Jerarquia`, `fecha_ascenso`, `des_ascenso`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (96)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/14 03:26:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '0' pour la clef 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_asc_fecha_asc` (`Cedula`, `Cod_Jerarquia`, `fecha_ascenso`, `des_ascenso`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\wamp\www\sabem\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\sabem\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\wamp\www\sabem\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php(96): CActiveRecord->save()
+#3 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): TblAscNotaTotalController->actionCreate()
+#4 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('tblascnotatotal...')
+#14 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sabem/tblascnotatotal/create.jsp
+HTTP_REFERER=http://localhost/sabem/tblascnotatotal/create.jsp
+---
+2016/03/14 03:31:57 [error] [php] Undefined variable: Funcionario (C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php:73)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/create.jsp
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (73)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/14 04:02:04 [error] [system.db.CDbCommand] CDbCommand::fetch() falló: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de ' id_conf_asc_fecha=1 LIMIT 1' à la ligne 1. La sentencia SQL ejecutada fue: SELECT * FROM `tbl_asc_nota_total` `t` WHERE Cedula=13909429, id_conf_asc_fecha=1 LIMIT 1.
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (78)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/14 04:02:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de ' id_conf_asc_fecha=1 LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `tbl_asc_nota_total` `t` WHERE Cedula=13909429, id_conf_asc_fecha=1 LIMIT 1' in C:\wamp\www\sabem\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\sabem\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\wamp\www\sabem\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryRow()
+#2 C:\wamp\www\sabem\framework\db\ar\CActiveRecord.php(1456): CActiveRecord->query(Object(CDbCriteria))
+#3 C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php(78): CActiveRecord->find('Cedula=13909429...')
+#4 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): TblAscNotaTotalController->actionCreate()
+#5 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('create')
+#14 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('tblascnotatotal...')
+#15 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/sabem/tblascnotatotal/create.jsp
+HTTP_REFERER=http://localhost/sabem/tblascnotatotal/create.jsp
+---
+2016/03/14 04:02:47 [error] [system.db.CDbCommand] CDbCommand::fetch() falló: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'id_conf_asc_fecha=1 LIMIT 1' à la ligne 1. La sentencia SQL ejecutada fue: SELECT * FROM `tbl_asc_nota_total` `t` WHERE Cedula=13909429AND id_conf_asc_fecha=1 LIMIT 1.
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (78)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/14 04:02:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de 'id_conf_asc_fecha=1 LIMIT 1' à la ligne 1. The SQL statement executed was: SELECT * FROM `tbl_asc_nota_total` `t` WHERE Cedula=13909429AND id_conf_asc_fecha=1 LIMIT 1' in C:\wamp\www\sabem\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\sabem\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\wamp\www\sabem\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryRow()
+#2 C:\wamp\www\sabem\framework\db\ar\CActiveRecord.php(1456): CActiveRecord->query(Object(CDbCriteria))
+#3 C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php(78): CActiveRecord->find('Cedula=13909429...')
+#4 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): TblAscNotaTotalController->actionCreate()
+#5 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('create')
+#14 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('tblascnotatotal...')
+#15 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/sabem/tblascnotatotal/create.jsp
+HTTP_REFERER=http://localhost/sabem/tblascnotatotal/create.jsp
+---
+2016/03/14 04:03:32 [error] [php] Non-static method Postularse::getMaximoRango() should not be called statically, assuming $this from incompatible context (C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php:81)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/create.jsp
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (81)
+in C:\wamp\www\sabem\index.php (13)
+2016/03/13 23:59:09 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\wamp\www\sabem\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('results')
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('tblascnotatotal...')
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sabem/tblascnotatotal/results.jsp
+HTTP_REFERER=http://localhost/sabem/FechaAsc/ppal.jsp
+---
+2016/03/13 23:59:28 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\wamp\www\sabem\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\wamp\www\sabem\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('results')
+#8 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('tblascnotatotal...')
+#9 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sabem/tblascnotatotal/results.jsp
+HTTP_REFERER=http://localhost/sabem/tblascnotatotal/results.jsp
+---
+2016/03/14 05:29:37 [error] [php] Undefined variable: dataProvider (C:\wamp\www\sabem\protected\views\tblAscNotaTotal\_view.php:2)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\zii\widgets\CListView.php(291): TblAscNotaTotalController->renderFile()
+#1 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 C:\wamp\www\sabem\framework\web\CBaseController.php(173): CListView->run()
+#6 C:\wamp\www\sabem\protected\views\tblAscNotaTotal\index.php(20): TblAscNotaTotalController->widget()
+#7 C:\wamp\www\sabem\framework\web\CBaseController.php(126): require()
+#8 C:\wamp\www\sabem\framework\web\CBaseController.php(95): TblAscNotaTotalController->renderInternal()
+#9 C:\wamp\www\sabem\framework\web\CController.php(869): TblAscNotaTotalController->renderFile()
+#10 C:\wamp\www\sabem\framework\web\CController.php(782): TblAscNotaTotalController->renderPartial()
+#11 C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php(168): TblAscNotaTotalController->render()
+#12 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): TblAscNotaTotalController->actionIndex()
+#13 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#15 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#18 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#21 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#22 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/index.jsp
+in C:\wamp\www\sabem\protected\views\tblAscNotaTotal\_view.php (2)
+in C:\wamp\www\sabem\protected\views\tblAscNotaTotal\index.php (20)
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (168)
+2016/03/14 05:30:51 [error] [php] Undefined variable: dataProvider (C:\wamp\www\sabem\protected\views\tblAscNotaTotal\_view.php:2)
+Stack trace:
+#0 C:\wamp\www\sabem\framework\zii\widgets\CListView.php(291): TblAscNotaTotalController->renderFile()
+#1 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 C:\wamp\www\sabem\framework\web\CBaseController.php(173): CListView->run()
+#6 C:\wamp\www\sabem\protected\views\tblAscNotaTotal\index.php(20): TblAscNotaTotalController->widget()
+#7 C:\wamp\www\sabem\framework\web\CBaseController.php(126): require()
+#8 C:\wamp\www\sabem\framework\web\CBaseController.php(95): TblAscNotaTotalController->renderInternal()
+#9 C:\wamp\www\sabem\framework\web\CController.php(869): TblAscNotaTotalController->renderFile()
+#10 C:\wamp\www\sabem\framework\web\CController.php(782): TblAscNotaTotalController->renderPartial()
+#11 C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php(168): TblAscNotaTotalController->render()
+#12 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): TblAscNotaTotalController->actionIndex()
+#13 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): TblAscNotaTotalController->runAction()
+#15 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\wamp\www\sabem\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): TblAscNotaTotalController->filterAccessControl()
+#18 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\wamp\www\sabem\framework\web\CController.php(265): TblAscNotaTotalController->runActionWithFilters()
+#21 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): TblAscNotaTotalController->run()
+#22 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\wamp\www\sabem\index.php(13): CWebApplication->run()
+REQUEST_URI=/sabem/tblascnotatotal/index.jsp
+in C:\wamp\www\sabem\protected\views\tblAscNotaTotal\_view.php (2)
+in C:\wamp\www\sabem\protected\views\tblAscNotaTotal\index.php (20)
+in C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php (168)
+2016/03/14 05:56:42 [error] [exception.CException] exception 'CException' with message 'La propiedad "TblAscNotaTotal"."fecha_proceso_asc" no se encuentra definida.' in C:\wamp\www\sabem\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\sabem\framework\db\ar\CActiveRecord.php(145): CComponent->__get('fecha_proceso_a...')
+#1 C:\wamp\www\sabem\protected\views\tblAscNotaTotal\_view.php(13): CActiveRecord->__get('fecha_proceso_a...')
+#2 C:\wamp\www\sabem\framework\web\CBaseController.php(130): require('C:\\wamp\\www\\sab...')
+#3 C:\wamp\www\sabem\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\sab...', Array, false)
+#4 C:\wamp\www\sabem\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('C:\\wamp\\www\\sab...', Array)
+#5 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 C:\wamp\www\sabem\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#9 C:\wamp\www\sabem\framework\web\CBaseController.php(173): CBaseListView->run()
+#10 C:\wamp\www\sabem\protected\views\tblAscNotaTotal\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\wamp\www\sabem\framework\web\CBaseController.php(126): require('C:\\wamp\\www\\sab...')
+#12 C:\wamp\www\sabem\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp\\www\\sab...', Array, true)
+#13 C:\wamp\www\sabem\framework\web\CController.php(869): CBaseController->renderFile('C:\\wamp\\www\\sab...', Array, true)
+#14 C:\wamp\www\sabem\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 C:\wamp\www\sabem\protected\controllers\TblAscNotaTotalController.php(168): CController->render('index', Array)
+#16 C:\wamp\www\sabem\framework\web\actions\CInlineAction.php(49): TblAscNotaTotalController->actionIndex()
+#17 C:\wamp\www\sabem\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\sabem\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\wamp\www\sabem\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\sabem\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\www\sabem\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\www\sabem\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\wamp\www\sabem\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('index')
+#26 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('tblascnotatotal...')
+#27 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/sabem/tblascnotatotal/index.jsp
+HTTP_REFERER=http://localhost/sabem/tblascnotatotal/results.jsp
+---
+2016/03/14 00:27:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "listarprocant" solicitada.' in C:\wamp\www\sabem\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CController.php(270): CController->missingAction('listarprocant')
+#1 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('listarprocant')
+#2 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('tblascnotatotal...')
+#3 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sabem/tblascnotatotal/ListarProcAnt/1.jsp
+HTTP_REFERER=http://localhost/sabem/tblascnotatotal/index.jsp
+---
+2016/03/14 00:28:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "listarprocant" solicitada.' in C:\wamp\www\sabem\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\sabem\framework\web\CController.php(270): CController->missingAction('listarprocant')
+#1 C:\wamp\www\sabem\framework\web\CWebApplication.php(282): CController->run('listarprocant')
+#2 C:\wamp\www\sabem\framework\web\CWebApplication.php(141): CWebApplication->runController('tblascnotatotal...')
+#3 C:\wamp\www\sabem\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\sabem\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sabem/tblascnotatotal/ListarProcAnt/1.jsp
+HTTP_REFERER=http://localhost/sabem/tblascnotatotal/index.jsp
+---
