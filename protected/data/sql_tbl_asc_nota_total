@@ -1,0 +1,2 @@
+ALTER TABLE  `bomgesh`.`tbl_asc_nota_total` DROP PRIMARY KEY ,
+ADD PRIMARY KEY (  `id_nota_total` )

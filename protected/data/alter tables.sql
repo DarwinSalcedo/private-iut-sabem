@@ -1,0 +1,13 @@
+ALTER TABLE `tbl_asc_fecha_ingreso` CHANGE `id_fecha_ingreso` `id_fecha_ingreso` INT(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `tbl_asc_fecha_ingreso` DROP PRIMARY KEY, ADD PRIMARY KEY( `id_fecha_ingreso`);
+ALTER TABLE `tbl_asc_antiguedad` CHANGE `id_antiguedad` `id_antiguedad` DOUBLE NOT NULL AUTO_INCREMENT;
+ALTER TABLE `tbl_asc_antiguedad` DROP PRIMARY KEY, ADD PRIMARY KEY( `id_antiguedad`);
+ALTER TABLE `tbl_asc_nivel_academico` CHANGE `id_nivel_academico` `id_nivel_academico` DOUBLE NOT NULL AUTO_INCREMENT;
+ALTER TABLE `tbl_asc_nivel_academico` DROP PRIMARY KEY, ADD PRIMARY KEY( `id_nivel_academico`);
+ALTER TABLE `tbl_asc_nota_total` CHANGE `id_nota_total` `id_nota_total` INT(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `tbl_asc_nota_total` DROP PRIMARY KEY, ADD PRIMARY KEY( `id_nota_total`);
+ALTER TABLE `tbl_asc_fecha_asc` ADD `des_ascenso` VARCHAR(250) NOT NULL ;
+ALTER TABLE `tbl_funcionarios` CHANGE `id_funcionario` `id_funcionario` DOUBLE NOT NULL AUTO_INCREMENT;
+ALTER TABLE `tbl_funcionarios` DROP PRIMARY KEY, ADD PRIMARY KEY( `id_funcionario`);
+ALTER TABLE `tbl_asc_fecha_asc` CHANGE `id_asc_fecha` `id_asc_fecha` INT(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `tbl_asc_fecha_asc` DROP PRIMARY KEY, ADD PRIMARY KEY( `id_asc_fecha`);
